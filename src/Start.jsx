@@ -29,7 +29,7 @@ function Start({ setIsStartEnd }) {
         onMouseEnter={() => {
           setIsClickMeHover(true);
         }}
-        onMouseOut={() => {
+        onMouseLeave={() => {
           setIsClickMeHover(false);
         }}
         onMouseDown={() => {
