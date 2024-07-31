@@ -6,7 +6,7 @@ import happyCatGif from "./assets/happy-cat.gif";
 import { useEffect, useRef, useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-function Body() {
+function Body({ setIsBodyEnd }) {
   const walkingCatRef = useRef();
   const catDisplayRef = useRef();
   const dialogRef = useRef();
@@ -223,6 +223,7 @@ function Body() {
       }
 
       if (isYesButtonClick) {
+        setIsBodyEnd(true);
         const tl = gsap.timeline();
 
         heartsRef.current.map((heartRef) => {

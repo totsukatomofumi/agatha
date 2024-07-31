@@ -35,7 +35,7 @@ const Background = () => {
       x:
         (-imageRef.current.width * images.length - 12 * (images.length - 1)) /
         2,
-      duration: 20,
+      duration: 70,
       ease: "none",
     });
   });
